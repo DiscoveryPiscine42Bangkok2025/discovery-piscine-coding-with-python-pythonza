@@ -86,16 +86,3 @@ def bishopHandler(i, j, board, length):
 def queenHandler(i, j, board, length):
     
     return rookHandler(i, j, board, length) or bishopHandler(i, j, board, length)
-
-def main():
-    board = """\
-    R....
-    .K...
-    ..P..
-    .....
-    ....B\
-    """
-    checkmate(board)
-
-if (__name__ == "__main__") :
-    main()
